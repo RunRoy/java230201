@@ -1,0 +1,24 @@
+package com.atguigu.morningtest;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestOne {
+    public static void main(String[] args) {
+        Set set = new TreeSet();
+
+        Student stu = new Student("Tom",20,"男");
+        Student stu1 = new Student("Jerry",21,"男");
+        Student stu2 = new Student("Mary",24,"女");
+        Student stu3 = new Student("June",21,"女");
+
+        set.add(stu);
+        set.add(stu1);
+        set.add(stu2);
+        set.add(stu3);
+
+        for (Object o : set) {
+            System.out.println(o);
+        }
+    }
+}
